@@ -1,0 +1,10 @@
+pagefactory\pages\SearchResultsPage.class
+pageobject\pages\IphonePage.class
+pagefactory\pages\BasePage.class
+pageobject\pages\HomePage.class
+pagefactory\pages\HomePage.class
+pageobject\pages\SearchResultsPage.class
+pagefactory\pages\AppleStorePage.class
+pageobject\pages\BasePage.class
+pagefactory\pages\IphonePage.class
+pageobject\pages\AppleStorePage.class
