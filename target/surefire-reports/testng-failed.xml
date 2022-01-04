@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="pagefactory.tests.AddToCartTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testsSetUp"/>
+          <include name="profileSetUp"/>
+          <include name="checkAddToCart"/>
+        </methods>
+      </class> <!-- pagefactory.tests.AddToCartTests -->
+      <class name="pageobject.tests.AddToCartTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkAddToCart"/>
+          <include name="profileSetUp"/>
+          <include name="testsSetUp"/>
+        </methods>
+      </class> <!-- pageobject.tests.AddToCartTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

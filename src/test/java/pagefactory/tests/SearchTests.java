@@ -12,13 +12,13 @@ public class SearchTests extends BaseTest {
     private String EXPECTED_SEARCH_QUERY = "query=iPhone";
 
     @Test(priority = 1)
-    public void checkThatUrlContainsSearchWord() {
+    public void checkThatUrlContainsSearchWordtest() {
         getHomePage().searchByKeyword(SEARCH_KEYWORD);
         assertTrue(getDriver().getCurrentUrl().contains(EXPECTED_SEARCH_QUERY));
     }
 
     @Test(priority = 2)
-    public void checkElementsAmountOnSearchPage() {
+    public void checkElementsAmountOnSearchPageTest() {
         getHomePage().searchByKeyword(SEARCH_KEYWORD);
         getHomePage().implicitWait(30);
         assertEquals(getSearchResultsPage().getSearchResultsCount(), 12);
