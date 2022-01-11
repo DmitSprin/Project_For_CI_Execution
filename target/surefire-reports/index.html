@@ -102,12 +102,12 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="pageobject.tests.AddToCartTests" class="method navigator-link" hash-for-method="checkAddToCart">checkAddToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="pagefactory.tests.AddToCartTests" class="method navigator-link" hash-for-method="checkAddToCart">checkAddToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="pagefactory.tests.AddToCartTests" class="method navigator-link" hash-for-method="checkAddToCart">checkAddToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="pageobject.tests.AddToCartTests" class="method navigator-link" hash-for-method="checkAddToCart">checkAddToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -133,9 +133,31 @@
                   <a name="checkAddToCart">
                   </a> <!-- checkAddToCart -->
                   <span class="method-name">checkAddToCart</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [1] but found []
-	at pagefactory.tests.AddToCartTests.checkAddToCart(AddToCartTests.java:20)
-... Removed 36 stack frames
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1SSKRN5&apos;, ip: &apos;192.168.77.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Dmitriy\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51129}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b61d322f97b6ed7aa9ad16134946784
+*** Element info: {Using=xpath, value=//div[@class=&apos;brand-box__title&apos;]/a[contains(@href,&apos;iphone&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at pagefactory.pages.AppleStorePage.clickOnIphoneButton(AppleStorePage.java:17)
+	at pagefactory.tests.AddToCartTests.checkAddToCart(AddToCartTests.java:15)
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -220,16 +242,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkAddToCart')
 data.setCell(0, 2, 'pagefactory.tests.AddToCartTests')
-data.setCell(0, 3, 6964);
+data.setCell(0, 3, 34376);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'checkAddToCart')
 data.setCell(1, 2, 'pageobject.tests.AddToCartTests')
-data.setCell(1, 3, 6006);
+data.setCell(1, 3, 21694);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -255,13 +277,6 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">pageobject.tests.SearchTests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">profileSetUp</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">pagefactory.tests.SearchTests</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">profileSetUp</span>
@@ -270,6 +285,13 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">pageobject.tests.BaseTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">profileSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">pageobject.tests.SearchTests</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">profileSetUp</span>
                 <br/>
@@ -293,41 +315,43 @@ return data;
               <div class="chronological-class-name">pageobject.tests.AddToCartTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">profileSetUp</span>
-                <span class="method-start">611 ms</span>
+                <span class="method-start">834 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pagefactory.tests.AddToCartTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">testsSetUp</span>
-                <span class="method-start">664 ms</span>
+                <span class="method-start">881 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkAddToCart</span>
-                <span class="method-start">5494 ms</span>
+                <span class="method-start">5676 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12474 ms</span>
+                <span class="method-start">40070 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pageobject.tests.AddToCartTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">testsSetUp</span>
-                <span class="method-start">12724 ms</span>
+                <span class="method-start">44238 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkAddToCart</span>
-                <span class="method-start">16700 ms</span>
+                <span class="method-start">47281 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22706 ms</span>
+                <span class="method-start">68977 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
