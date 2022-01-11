@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="com.epam.external.courses" />
         <module name="PageObject" />
         <module name="FirstWebDriverProject" />
-        <module name="com.epam.external.courses" />
       </profile>
     </annotationProcessing>
   </component>
